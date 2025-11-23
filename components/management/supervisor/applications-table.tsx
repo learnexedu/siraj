@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Search, Filter, Eye, Download, Trash2 } from 'lucide-react'
+import { Search, Eye, Download, Trash2 } from 'lucide-react'
 
 interface Application {
   id: string
@@ -197,7 +197,7 @@ export function ApplicationsTable() {
           {[1, 2, 3, 4, 5].map((page) => (
             <Button
               key={page}
-              variant={page === 1 ? 'default' : 'outline-solid'}
+              variant={page === 1 ? 'default' : 'outline'}
               className={page === 1 ? 'bg-accent text-primary' : 'border-dashboard-border text-dashboard-text'}
             >
               {page}

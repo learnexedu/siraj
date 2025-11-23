@@ -13,19 +13,19 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/app/_components/layout/shadcnM/dialogWithoutX";
-import { LoadingBtnEn } from "@/app/_components/layout/loadingBtn";
+} from "@/components/ui/dialog";
+import { LoadingBtnEn } from "@/components/layout/navigation/loading-btn";
 
 // icons
 import { Check, X } from "lucide-react";
 
 // props
 interface Props {
-  children?: JSX.Element;
+  children?: React.JSX.Element;
   item?: string;
   description?: string;
   lang?: "en" | "ar";
-  onConfirm: () => Promise<any>;
+  onConfirm: () => Promise<boolean>;
   onSuccess?: () => void;
   onFailure?: () => void;
 }
